@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import TopBar from './components/TopBar';
-import Sidebar from './components/Sidebar';
+import AssetsPanel from './components/AssetsPanel';
 import PropertiesPanel from './components/PropertiesPanel';
 import BottomNav from './components/BottomNav';
 import { useFabricCanvas } from './hooks/useFabricCanvas';
@@ -58,7 +58,7 @@ export default function App() {
       <TopBar canvas={canvas} projectName="Mi Diseño Local" />
       
       <div className="flex flex-1 overflow-hidden relative">
-        <Sidebar canvas={canvas} saveState={saveState} />
+        <AssetsPanel canvas={canvas} saveState={saveState} />
         
         <main className="flex-1 overflow-auto flex items-center justify-center p-8 bg-gray-200">
           <div 
